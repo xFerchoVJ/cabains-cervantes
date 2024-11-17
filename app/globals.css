@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: 32 24% 38%;
+  --primary-foreground: 0 0% 98%;
+
+  --secondary: 37 38% 83%;
+  --secondary-foreground: 32 24% 38%;
+
+  --background: 0 0% 100%;
+  --foreground: 0 0% 3.9%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 3.9%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 3.9%;
+
+  --muted: 37 38% 83%;
+  --muted-foreground: 32 24% 38%;
+
+  --accent: 37 38% 83%;
+  --accent-foreground: 32 24% 38%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 37 38% 83%;
+  --input: 37 38% 83%;
+  --ring: 32 24% 38%;
+
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 32 24% 38%;
+  --foreground: 0 0% 98%;
+
+  --card: 32 24% 38%;
+  --card-foreground: 0 0% 98%;
+
+  --popover: 32 24% 38%;
+  --popover-foreground: 0 0% 98%;
+
+  --primary: 37 38% 83%;
+  --primary-foreground: 32 24% 38%;
+
+  --secondary: 32 24% 38%;
+  --secondary-foreground: 0 0% 98%;
+
+  --muted: 32 24% 38%;
+  --muted-foreground: 37 38% 83%;
+
+  --accent: 32 24% 38%;
+  --accent-foreground: 0 0% 98%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 32 24% 38%;
+  --input: 32 24% 38%;
+  --ring: 37 38% 83%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+  }
+}
+
+.accordion-button {
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.accordion-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.green-bg-color {
+  background: #9fb59f;
+}
