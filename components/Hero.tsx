@@ -24,13 +24,13 @@ export function Hero() {
         className="absolute inset-0 z-0"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1587061949409-02df41d5e562?q=80&w=1000&auto=format&fit=crop')",
+            "url('/images/HeroImage.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           y,
         }}
       >
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/60" />
       </motion.div>
 
       <div className="relative z-10 text-center text-custom-white px-4">
@@ -48,7 +48,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          Una experiencia única en el corazón de Tapalpa
+          Un hogar en el corazón de Tapalpa
         </motion.p>
         <motion.div
           className="flex items-center justify-center gap-4 mb-8"

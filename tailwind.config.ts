@@ -9,9 +9,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        parisienne: ["Parisienne", "cursive"],
+      },
       colors: {
-        "brand-brown": "#7B5C47",
-        "brand-beige": "#E5DAC4",
+        "brand-brown": "#8B4513",
+        "brand-beige": "#F5DEB3",
+        "brand-green": "#228B22",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

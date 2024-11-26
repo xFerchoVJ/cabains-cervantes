@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 type NavItemsType = {
   label: string;
@@ -34,9 +34,16 @@ export function Navigation() {
     <nav className="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
-          {/* Logo */}
-          <div className="flex items-center">
-            <h2>Morada de Cervantes</h2>
+          {/* Logo and Brand Name */}
+          <div className="flex items-center gap-3 justify-center">
+            <Image
+              src="/images/Logo_MoradaCervantes.png"
+              alt="Morada de Cervantes Logo"
+              width={60}
+              height={60}
+              className="object-contain mx-auto"
+            />
+            <h2 className="text-xl font-semibold">Morada de Cervantes</h2>
           </div>
 
           {/* Desktop Navigation */}
