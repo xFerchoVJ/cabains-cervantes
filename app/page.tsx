@@ -4,7 +4,7 @@ import { Suspense, useEffect, useRef, useState } from "react";
 import { ScrollText, Phone, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { zones, rules, recommendations } from "@/lib/data";
+import { zones, recommendations } from "@/lib/data";
 import { Hero } from "@/components/Hero";
 import { ZoneCard } from "@/components/ZoneCard";
 import { RecommendationCard } from "@/components/RecommendationCard";
@@ -14,6 +14,8 @@ import { motion, useAnimation, Variants } from "framer-motion";
 import Ubication from "@/components/Ubication";
 import OurHistory from "@/components/OurHistory";
 import Spinner from "@/components/ui/spinner";
+import { RulesSection } from "@/components/RulesSection";
+import { LugaresCercanos } from "@/components/LugaresCercanos";
 
 const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 20 },
@@ -112,11 +114,11 @@ export default function Home() {
           id="zonas"
         >
           <motion.div variants={fadeInUp} className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-brand-brown mb-4">
-              Nuestras Zonas
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-brown mb-4 font-parisienne">
+              Cabañas
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Descubre los espacios únicos que Morada de Cervantes tiene para ti
+              Descubre los espacios únicos que tenemos para ti
             </p>
           </motion.div>
 
@@ -131,61 +133,13 @@ export default function Home() {
       </section>
 
       {/* Reglas */}
-      <section id="reglas">
-        <AnimatedSection className="py-16 bg-white" id="reglas">
-          <div className="max-w-7xl mx-auto px-4 md:px-8">
-            <motion.div variants={fadeInUp} className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-brand-brown mb-4">
-                Reglas de la Casa
-              </h2>
-              <p className="text-gray-600">
-                Para asegurar una estancia agradable para todos
-              </p>
-            </motion.div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {rules.map((rule, index) => (
-                <motion.div key={index} variants={fadeInUp}>
-                  <Card className="border-none shadow-lg bg-brand-beige/10">
-                    <CardContent className="flex items-start p-6">
-                      <ScrollText className="w-6 h-6 text-brand-brown mr-4 flex-shrink-0" />
-                      <p className="text-gray-700">{rule}</p>
-                    </CardContent>
-                  </Card>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </AnimatedSection>
-      </section>
+      <RulesSection />
 
       {/* Lo que ofrece este lugar */}
       <AmenitiesSection />
 
       {/* Recomendaciones */}
-      <section id="lugares">
-        <AnimatedSection
-          className="py-16 px-4 md:px-8 max-w-7xl mx-auto"
-          id="lugares"
-        >
-          <motion.div variants={fadeInUp} className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-brand-brown mb-4">
-              Lugares Cercanos
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Explora los atractivos turísticos cerca de Morada de Cervantes
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {recommendations.map((recommendation, index) => (
-              <motion.div key={index} variants={fadeInUp}>
-                <RecommendationCard recommendation={recommendation} />
-              </motion.div>
-            ))}
-          </div>
-        </AnimatedSection>
-      </section>
+      <LugaresCercanos />
 
       {/* Ubicación */}
       <section id="ubicacion">
