@@ -23,7 +23,7 @@ const ruleCategories = [
     title: "Horarios de Entrada y Salida",
     icon: <Clock className="w-6 h-6 text-brand-brown" />,
     rules: [
-      "Entrada: De las 15:00 a las 18:00",
+      "Entrada: De las 15:00 a las 23:00",
       "Salida: De las 8:00 a las 12:00",
     ],
   },

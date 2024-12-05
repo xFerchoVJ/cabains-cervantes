@@ -48,7 +48,7 @@ const OurHistory: React.FC<OurHistoryProps> = ({ fadeInUp }) => {
             </p>
             <p className="text-xl font-semibold text-[#7a5c47] italic text-justify">
               Bienvenido a Morada de Cervantes. Un hogar en el corazón de
-              Tapalpa, donde cada amanecer es una invitación a vivir tu mejor
+              Tapalpa, donde cada atardecer es una invitación a vivir tu mejor
               historia.
             </p>
           </motion.div>

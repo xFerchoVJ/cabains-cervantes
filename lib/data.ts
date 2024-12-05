@@ -13,7 +13,6 @@ import {
   Droplets,
   Mountain,
   Building,
-  Music,
   Utensils,
 } from "lucide-react";
 
@@ -44,14 +43,14 @@ export const zones = [
       "/images/cabañas/dulcinea/SUITE (4).jpg",
       "/images/cabañas/dulcinea/SUITE (9).jpg",
     ],
-    capacity: 2,
+    capacity: 4,
     beds: "2 queen",
   },
   {
     id: "bungalow-clavileño",
     name: "Bungalow Clavileño",
     description:
-      "Un refugio para tres personas, con 1 cama matrimonial y 1 cama individual. Perfecto para parejas pequeñas o pequeños grupos que buscan relajarse y disfrutar de un espacio acogedor con todas las comodidades.",
+      "Un refugio para tres personas, con 1 cama matrimonial y 1 cama individual, además de estacionamiento privado y fogateros. Perfecto para parejas pequeñas o pequeños grupos que buscan relajarse y disfrutar de un espacio acogedor con todas las comodidades.",
     images: [
       "/images/cabañas/clavileño/B. CLAVILEÑO (5) (1).jpg",
       "/images/cabañas/clavileño/B. CLAVILEÑO (5).jpg",
@@ -63,7 +62,7 @@ export const zones = [
     id: "bungalow-rocinante",
     name: "Bungalow Rocinante",
     description:
-      "Este encantador espacio para tres personas ofrece 1 cama matrimonial y 1 cama individual. Un lugar íntimo y cómodo que invita a disfrutar de momentos inolvidables junto a los hermosos paisajes de Tapalpa.",
+      "Este encantador espacio para tres personas ofrece 1 cama matrimonial y 1 cama individual, además de estacionamiento privado y fogateros. Un lugar íntimo y cómodo que invita a disfrutar de momentos inolvidables junto a los hermosos paisajes de Tapalpa.",
     images: [
       "/images/cabañas/rocinante/B. ROCINANTE (1).jpg",
       "/images/cabañas/rocinante/B. ROCINANTE (4).jpg",
@@ -99,14 +98,6 @@ export const recommendations = [
       "🏛️ Tradición en cada esquina: Camina entre calles empedradas, casas de adobe con techos de teja roja y el vibrante corazón del pueblo. Visita la Parroquia de San Antonio y disfruta de los antojitos típicos en la plaza principal. El encanto de Tapalpa te envolverá desde el primer paso.",
   },
   {
-    name: "La Calle de los Músicos",
-    image:
-      " https://i0.wp.com/viajoconestilo.com/wp-content/uploads/2017/03/rutatequilamontana.jpg?resize=1170%2C700&ssl=1",
-    icon: Music,
-    description:
-      "🎶 Donde la melodía nunca falta: Una calle que vibra con arte y tradición. Escucha a los músicos locales llenando el aire con acordes nostálgicos y alegres, y vive la magia de la música en su forma más auténtica.",
-  },
-  {
     name: "Sabores de Tapalpa",
     image:
       "https://escapadas.mexicodesconocido.com.mx/wp-content/uploads/2020/10/la-mezcalera-tapalpa.jpg",
@@ -124,6 +115,8 @@ export const amenities = [
       "Shampoo",
       "Acondicionador",
       "Agua caliente",
+      "Secadora de Cabello",
+      "Gel de baño",
     ],
   },
   {
@@ -183,6 +176,7 @@ export const amenities = [
       "Lugar para hacer fogata",
       "Muebles exteriores",
       "Asador",
+      "Fogateros",
     ],
   },
   {

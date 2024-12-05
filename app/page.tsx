@@ -1,13 +1,11 @@
 "use client";
 
-import { Suspense, useEffect, useRef, useState } from "react";
-import { ScrollText, Phone, Mail, MapPin } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { zones, recommendations } from "@/lib/data";
+import { zones } from "@/lib/data";
 import { Hero } from "@/components/Hero";
 import { ZoneCard } from "@/components/ZoneCard";
-import { RecommendationCard } from "@/components/RecommendationCard";
 import { Navigation } from "@/components/Navigation";
 import { AmenitiesSection } from "@/components/AmenitiesSection";
 import { motion, useAnimation, Variants } from "framer-motion";
@@ -182,11 +180,11 @@ export default function Home() {
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-center">
                   <Phone className="w-4 h-4 mr-2" />
-                  Teléfono: (123) 456-7890
+                  Teléfono: 343 100 0009 Teléfono: 312 320 2246
                 </li>
                 <li className="flex items-center">
                   <Mail className="w-4 h-4 mr-2" />
-                  Email: info@moradacervantes.com
+                  Email: minaglezcervantes17@gmail.com
                 </li>
                 <li className="flex items-center">
                   <MapPin className="w-4 h-4 mr-2" />
