@@ -180,7 +180,7 @@ export default function Home() {
               <ul className="space-y-2 text-sm text-gray-600">
                 <li className="flex items-center">
                   <Phone className="w-4 h-4 mr-2" />
-                  Teléfono: 343 100 0009 Teléfono: 312 320 2246
+                  Teléfono: 343 109 0009 Teléfono: 312 320 2246
                 </li>
                 <li className="flex items-center">
                   <Mail className="w-4 h-4 mr-2" />
